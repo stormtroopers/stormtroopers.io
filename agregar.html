@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div id="box">
+      <!-- Caja para ingreso de datos de nueva pelicula -->
+    <div id="up">
+      <div id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></div>
+      <h1 id="upi">Pelicula</h1>
+    <div id="linea">
+        <h4>Nombre:</h4>
+          <input id="nombre" type="text" autofocus>
+        <h4>Año:</h4>
+          <input id="anio" type="text">
+        <h4>Genero:</h4>
+          <input id="genero" type="text">
+        <br>
+        <h4>Descripción:</h4>
+          <input id="descripcion" type="text">
+        <br>
+        <br>
+        <h4>Director:</h4>
+        <select name="director" id="director">
+          <option value=""></option>
+        </select>
+
+        <h4>Actor principal:</h4>
+        <select name="actor" id="actor">
+          <option value=""></option>
+        </select>
+       <br>
+        <br>
+        <button id="agregarP"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <button id="borrar"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+    </div>
+    </div>
+      <!-- Caja para ingreso de datos de un nuevo actor -->
+    <div id="upA">
+      <div id="cerrarA"><i class="fa fa-times" aria-hidden="true"></i></div>
+      <h1 id="upi">Actores</h1>
+        <div id="linea">
+        <h4>Nombre:</h4>
+          <input id="nombA" type="text" autofocus>
+        <h4>Edad:</h4>
+          <input id="edad" type="text">
+        <h4>Nacionalidad:</h4>
+          <input id="nacionalidad" type="text">
+          <button id="agregarA"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <button id="borrarA"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+    </div>
+    </div>
+       <!-- Caja para ingreso de datos de un nuevo director -->
+   <div id="upD">
+      <div id="cerrarD"><i class="fa fa-times" aria-hidden="true"></i></div>
+      <h1 id="upi">Directores</h1>
+        <div id="linea">
+        <h4>Nombre:</h4>
+          <input id="nombD" type="text" autofocus>
+        <h4>Edad:</h4>
+          <input id="edadD" type="text">
+        <h4>Nacionalidad :</h4>
+          <input id="nac" type="text">
+          <button id="agregarD"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <button id="borrarD"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+    </div>
+    </div>
+
+    <div id="#down">
+      <section id="contenido">
+          <!--Tabla para mostrar las peliculas-->
+        <table id= "peliculas">
+           <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th >Año</th>
+                <th>Genero</th>
+                <th>Director</th>
+                <th>Actor principal</th>
+                <th class="show" id="showP"><i class="fa fa-plus" aria-hidden="true"></i></th>
+                <th class="limpiar"><i class="fa fa-refresh" aria-hidden="true"></i></th>
+            </tr>
+           </thead>
+
+           <tbody id="pel">
+
+           </tbody>
+            <!--Tabla para mostrar Actores-->
+        </table>
+           <br>
+    <br>
+          <table>
+           <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Nacionalidad</th>
+                <th class="show" id="showA"><i class="fa fa-plus" aria-hidden="true"></i></th>
+                <th class="limpiar"><i class="fa fa-refresh" aria-hidden="true"></i></th>
+            </tr>
+           </thead>
+
+           <tbody id="act">
+
+           </tbody>
+
+        </table>
+           <br>
+    <br>
+          <!--Tabla para mostrar Directores-->
+          <table>
+           <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Nacionalidad</th>
+                <th class="show" id="showD"><i class="fa fa-plus" aria-hidden="true"></i></th>
+                <th class="limpiar"><i class="fa fa-refresh" aria-hidden="true"></i></th>
+            </tr>
+           </thead>
+
+           <tbody id="direc">
+
+           </tbody>
+
+        </table>
+      </section>
+    </div>
+
+  </div>
+</body>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/code.js"></script>
+</html>
